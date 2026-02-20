@@ -4,22 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-  <!-- Primary SEO -->
   <title>CHAITHANYA MEDICALS | Rayachoty, Andhra Pradesh</title>
   <meta name="description" content="Chaithanya Medicals is a trusted pharmacy in Rayachoty, Annamayya District, Andhra Pradesh. Genuine medicines, healthcare essentials, and quick WhatsApp ordering with doorstep delivery support." />
   <meta name="theme-color" content="#0f766e" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="CHAITHANYA MEDICALS | Rayachoty, Andhra Pradesh" />
   <meta property="og:description" content="Trusted pharmacy in Rayachoty • Genuine medicines • WhatsApp ordering • Quick support & delivery" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og.jpg" />
   <meta property="og:locale" content="en_IN" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Icons -->
   <link rel="icon" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/icon-192.png" />
 
@@ -30,48 +25,58 @@
 
   <style>
     :root{
-      --ink: #0b1220;
-      --teal-950: #042f2e;
-      --teal-900: #0f3d3a;
-      --teal-800: #115e59;
-      --teal-700: #0f766e;
-      --teal-600: #14b8a6;
-      --emerald-500: #10b981;
-      --bg1: #f3fffb;
-      --bg2: #ffffff;
+      --ink:#0b1220;
+      --teal-950:#042f2e;
+      --teal-800:#115e59;
+      --teal-700:#0f766e;
+      --emerald-500:#10b981;
+      --bg1:#f3fffb;
+      --bg2:#ffffff;
     }
     *{ font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
     body{
-      color: var(--ink);
+      color:var(--ink);
       background:
         radial-gradient(1100px 600px at 12% -10%, rgba(16,185,129,.18), rgba(16,185,129,0) 58%),
         radial-gradient(900px 520px at 88% 0%, rgba(20,184,166,.18), rgba(20,184,166,0) 58%),
         linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 40%, #ecfeff 100%);
     }
 
-    .glass{ background: rgba(255,255,255,.72); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-    .ring-soft{ box-shadow: 0 0 0 1px rgba(13,148,136,.12) inset; }
-    .shadow-soft{ box-shadow: 0 10px 30px rgba(2,44,34,.12); }
-    .shadow-card{ box-shadow: 0 14px 50px rgba(15,118,110,.14); }
-    .tap{ -webkit-tap-highlight-color: transparent; }
+    .glass{ background:rgba(255,255,255,.72); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); }
+    .ring-soft{ box-shadow:0 0 0 1px rgba(13,148,136,.12) inset; }
+    .shadow-soft{ box-shadow:0 10px 30px rgba(2,44,34,.12); }
+    .shadow-card{ box-shadow:0 14px 50px rgba(15,118,110,.14); }
 
-    .btn{ transition: transform .15s ease, box-shadow .15s ease, background .15s ease, opacity .15s ease; }
-    .btn:active{ transform: scale(.985); }
-    .btn:focus-visible{ outline: 3px solid rgba(20,184,166,.35); outline-offset: 2px; }
+    .tap{ -webkit-tap-highlight-color:transparent; }
+    .btn{ transition:transform .15s ease, box-shadow .15s ease, background .15s ease, opacity .15s ease; }
+    .btn:active{ transform:scale(.985); }
+    .btn:focus-visible{ outline:3px solid rgba(20,184,166,.35); outline-offset:2px; }
 
-    .fade-in{ animation: fadeIn .6s ease both; }
-    @keyframes fadeIn{ from{ opacity:0; transform:translateY(10px);} to{ opacity:1; transform:translateY(0);} }
+    .fade-in{ animation:fadeIn .6s ease both; }
+    @keyframes fadeIn{ from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:translateY(0);} }
 
-    .pill{ background: linear-gradient(135deg, rgba(16,185,129,.18), rgba(20,184,166,.16)); }
+    .pill{ background:linear-gradient(135deg, rgba(16,185,129,.18), rgba(20,184,166,.16)); }
 
-    .logo-img{ width: 44px; height: 44px; object-fit: contain; }
-    .logo-hero{ width: 170px; height: 170px; object-fit: contain; }
+    .logo-img{ width:44px; height:44px; object-fit:contain; }
 
-    .safe-bottom{ padding-bottom: max(1.25rem, env(safe-area-inset-bottom)); }
+    /* HERO LOGO: clean + big (no card/block) */
+    .hero-logo{
+      width: 230px;
+      height: 230px;
+      object-fit: contain;
+    }
+    @media (min-width: 640px){
+      .hero-logo{ width: 300px; height: 300px; }
+    }
+    @media (min-width: 1024px){
+      .hero-logo{ width: 340px; height: 340px; }
+    }
 
-    .map-wrap{ border-radius: 26px; overflow: hidden; }
+    .safe-bottom{ padding-bottom:max(1.25rem, env(safe-area-inset-bottom)); }
+
+    .map-wrap{ border-radius:26px; overflow:hidden; }
     .map-wrap iframe{ width:100%; height:360px; border:0; }
-    @media (min-width: 1024px){ .map-wrap iframe{ height: 440px; } }
+    @media (min-width: 1024px){ .map-wrap iframe{ height:440px; } }
   </style>
 </head>
 
@@ -97,9 +102,7 @@
               Trusted
             </span>
           </div>
-          <p id="taglineTop" class="text-xs sm:text-sm text-slate-600 font-medium">
-            Your Trusted Healthcare Partner
-          </p>
+          <p id="taglineTop" class="text-xs sm:text-sm text-slate-600 font-medium">Your Trusted Healthcare Partner</p>
         </div>
       </div>
 
@@ -108,6 +111,7 @@
         <a href="#services" class="tap px-4 py-2 rounded-full text-sm font-semibold text-slate-700 hover:bg-teal-50">Services</a>
         <a href="#about" class="tap px-4 py-2 rounded-full text-sm font-semibold text-slate-700 hover:bg-teal-50">About</a>
         <a href="#contact" class="tap px-4 py-2 rounded-full text-sm font-semibold text-slate-700 hover:bg-teal-50">Contact</a>
+
         <a id="navDirectionsBtn" href="#" target="_blank" rel="noopener noreferrer"
            class="tap btn inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-slate-900 text-sm font-bold ring-soft shadow-soft hover:shadow-card">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,6 +120,7 @@
           </svg>
           Directions
         </a>
+
         <a id="navWhatsappBtn" href="#" target="_blank" rel="noopener noreferrer"
            class="tap btn inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500 text-white text-sm font-extrabold shadow-soft hover:shadow-card">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.520.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 23.795h-.005a11.882 11.882 0 01-5.683-1.448L.057 24l1.688-6.163A9.86 9.86 0 01.157 11.892C.16 5.335 5.495 0 12.05 0c3.18.001 6.166 1.24 8.413 3.488a11.821 11.821 0 013.48 8.413c-.003 6.558-5.338 11.894-11.893 11.894z"/></svg>
@@ -152,17 +157,14 @@
     </div>
   </header>
 
-  <!-- Hero (Centered Big Logo first, then content below) -->
+  <!-- HERO: clean big logo (no block), then rest -->
   <section class="max-w-6xl mx-auto px-4 pt-8 sm:pt-12 pb-8 sm:pb-12">
-    <div class="fade-in rounded-3xl glass ring-soft p-6 sm:p-10 shadow-card text-center">
-      <!-- Big logo in the middle FIRST -->
+    <div class="fade-in text-center">
+      <!-- Clean big logo (no card/background) -->
       <div class="flex justify-center">
-        <div class="w-48 h-48 sm:w-60 sm:h-60 rounded-[32px] bg-white ring-soft flex items-center justify-center overflow-hidden shadow-soft">
-          <img id="heroLogo" src="assets/logo.png" alt="Chaithanya Medicals logo" class="logo-hero" />
-        </div>
+        <img id="heroLogo" src="assets/logo.png" alt="Chaithanya Medicals logo" class="hero-logo" />
       </div>
 
-      <!-- Rest below -->
       <div class="mt-5 inline-flex items-center gap-2 px-3 py-1.5 rounded-full pill text-teal-950 text-xs font-extrabold ring-soft">
         <span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
         Genuine Medicines • WhatsApp Ordering • Quick Support
@@ -180,7 +182,7 @@
       <div class="mt-6 flex flex-col sm:flex-row justify-center gap-3">
         <a id="heroWhatsappBtn" href="#" target="_blank" rel="noopener noreferrer"
            class="tap btn inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-4 bg-emerald-500 text-white font-extrabold shadow-soft hover:shadow-card">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.520.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.520.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.520.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
           Order on WhatsApp
         </a>
 
@@ -199,8 +201,6 @@
           Directions
         </a>
       </div>
-
-      <!-- Removed blocks + removed tip line as requested -->
     </div>
   </section>
 
@@ -249,7 +249,7 @@
 
       <div class="rounded-3xl glass ring-soft p-6 shadow-soft">
         <div class="w-12 h-12 rounded-2xl bg-white ring-soft flex items-center justify-center">
-          <svg class="w-6 h-6 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <svg class="w-6 h-6 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
         </div>
         <h4 class="mt-4 text-lg font-extrabold text-slate-900">Customer Support</h4>
         <p class="mt-2 text-sm text-slate-600">Friendly assistance for availability, usage queries, and alternatives.</p>
@@ -434,7 +434,6 @@
     </div>
   </footer>
 
-  <!-- Config + Behavior -->
   <script>
     const defaultConfig = {
       store_name: 'CHAITHANYA MEDICALS',
@@ -447,12 +446,12 @@
       map_embed_src: document.getElementById('mapEmbed')?.getAttribute('src') || ''
     };
 
-    function normalizePhoneForTel(phoneText){ return (phoneText || '').toString().replace(/[^\d+]/g, ''); }
-    function phoneForWhatsApp(phoneText){ return (phoneText || '').toString().replace(/[^\d]/g, ''); }
-    function safeSetText(id, text){ const el = document.getElementById(id); if (el) el.textContent = text; }
-    function safeSetHref(id, href){ const el = document.getElementById(id); if (el) el.setAttribute('href', href); }
-    function safeSetSrc(id, src){ const el = document.getElementById(id); if (el) el.setAttribute('src', src); }
-    function safeSetAttr(id, attr, value){ const el = document.getElementById(id); if (el) el.setAttribute(attr, value); }
+    function normalizePhoneForTel(phoneText){ return (phoneText || '').toString().replace(/[^\d+]/g,''); }
+    function phoneForWhatsApp(phoneText){ return (phoneText || '').toString().replace(/[^\d]/g,''); }
+    function safeSetText(id, text){ const el=document.getElementById(id); if(el) el.textContent=text; }
+    function safeSetHref(id, href){ const el=document.getElementById(id); if(el) el.setAttribute('href', href); }
+    function safeSetSrc(id, src){ const el=document.getElementById(id); if(el) el.setAttribute('src', src); }
+    function safeSetAttr(id, attr, value){ const el=document.getElementById(id); if(el) el.setAttribute(attr, value); }
 
     function applyConfig(cfg){
       const config = { ...defaultConfig, ...(cfg || {}) };
@@ -460,6 +459,7 @@
       const storeName = config.store_name || defaultConfig.store_name;
       ['storeName','heroStoreName','aboutStoreName','footerStoreName','footerCopyrightName']
         .forEach(id => safeSetText(id, storeName));
+
       safeSetText('taglineTop', config.tagline_top || defaultConfig.tagline_top);
       safeSetText('tagline', config.tagline || defaultConfig.tagline);
 
@@ -468,11 +468,8 @@
       const logoUrl = config.logo_url || defaultConfig.logo_url;
       ['headerLogo','heroLogo','footerLogo'].forEach(id => safeSetSrc(id, logoUrl));
 
-      const address = config.address || defaultConfig.address;
-
       const hours = config.working_hours || defaultConfig.working_hours;
       safeSetText('workingHoursTop', hours.replace(' (All Days)',''));
-      safeSetText('contactHours', hours);
 
       const phone = config.phone_number || defaultConfig.phone_number;
       const telPhone = normalizePhoneForTel(phone);
@@ -484,19 +481,18 @@
       ['heroCallBtn','contactCallBtn','footerCallBtn'].forEach(id => safeSetHref(id, `tel:${telPhone}`));
 
       const orderMsg = encodeURIComponent(`Hi ${storeName}, I want to order medicines. Please confirm availability and price.`);
-      safeSetHref('heroWhatsappBtn', `https://wa.me/${waPhone}?text=${orderMsg}`);
-      safeSetHref('navWhatsappBtn', `https://wa.me/${waPhone}?text=${orderMsg}`);
-      safeSetHref('mobileWhatsappBtn', `https://wa.me/${waPhone}?text=${orderMsg}`);
-      safeSetHref('footerWhatsappBtn', `https://wa.me/${waPhone}?text=${orderMsg}`);
-      safeSetHref('contactWhatsappBtn', `https://wa.me/${waPhone}?text=${orderMsg}`);
+      ['heroWhatsappBtn','navWhatsappBtn','mobileWhatsappBtn','footerWhatsappBtn','contactWhatsappBtn']
+        .forEach(id => safeSetHref(id, `https://wa.me/${waPhone}?text=${orderMsg}`));
 
-      const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+      const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(config.address || defaultConfig.address)}`;
       ['heroDirectionsBtn','navDirectionsBtn','mobileDirectionsBtn','contactDirectionsBtn','footerDirectionsBtn']
         .forEach(id => safeSetHref(id, directionsUrl));
 
-      if (config.map_embed_src) safeSetAttr('mapEmbed', 'src', config.map_embed_src);
+      if (config.map_embed_src) safeSetAttr('mapEmbed','src',config.map_embed_src);
 
       safeSetText('year', new Date().getFullYear());
+      safeSetText('contactHours', hours);
+      safeSetText('contactAddress', config.address || defaultConfig.address);
     }
 
     applyConfig(defaultConfig);
